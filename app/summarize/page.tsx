@@ -292,7 +292,7 @@ export default function SummarizePage() {
 
         {/* Key Points */}
         <section className="mt-10">
-          <h2 className="animate-glow text-xl font-semibold text-yellow-300">
+          <h2 className="animate-glow text-xl font-semibold text-yellow-400">
             Key Points
           </h2>
 
@@ -311,7 +311,7 @@ export default function SummarizePage() {
 
         {/* Important Terms */}
         <section className="mt-10">
-          <h2 className="animate-glow text-xl font-semibold text-yellow-300">
+          <h2 className="animate-glow text-xl font-semibold text-yellow-400">
             Important Terms
           </h2>
 
@@ -321,7 +321,7 @@ export default function SummarizePage() {
                 key={index}
                 className="wrap-break-word rounded-full border
                            border-yellow-500/40 bg-yellow-500/10
-                           px-4 py-2 text-sm text-yellow-300"
+                           px-4 py-2 text-sm text-yellow-400"
               >
                 {term}
               </span>
@@ -331,7 +331,7 @@ export default function SummarizePage() {
 
         {/* Sections */}
         <section className="mt-10">
-          <h2 className="animate-glow text-xl font-semibold text-yellow-300">
+          <h2 className="animate-glow text-xl font-semibold text-yellow-400">
             Document Sections
           </h2>
 

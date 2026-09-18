@@ -269,7 +269,7 @@ export default function SummarizePage() {
             {data.summary.title}
           </h1>
 
-          <p className="mt-2 break-words text-sm text-gray-400">
+          <p className="mt-2 wrap-break-word text-sm text-gray-400">
             {data.filename}
           </p>
         </div>
@@ -280,8 +280,8 @@ export default function SummarizePage() {
             Summary
           </h2>
 
-          <p className="mt-4 min-h-[120px] whitespace-pre-wrap
-                        break-words leading-8 text-gray-400">
+          <p className="mt-4 min-h-30 whitespace-pre-wrap
+                        wrap-break-word leading-8 text-gray-400">
             {typedSummary}
 
             {typedSummary.length < data.summary.summary.length && (
@@ -300,7 +300,7 @@ export default function SummarizePage() {
             {typedKeyPoints.map((point, index) => (
               <li
                 key={index}
-                className="min-h-[60px] break-words rounded-xl
+                className="min-h-15 wrap-break-word rounded-xl
                            border border-gray-800 p-4 text-gray-400"
               >
                 {point}
@@ -319,7 +319,7 @@ export default function SummarizePage() {
             {typedTerms.map((term, index) => (
               <span
                 key={index}
-                className="break-words rounded-full border
+                className="wrap-break-word rounded-full border
                            border-yellow-500/40 bg-yellow-500/10
                            px-4 py-2 text-sm text-yellow-300"
               >
@@ -342,7 +342,7 @@ export default function SummarizePage() {
                 className="rounded-xl border border-gray-800 p-5"
               >
                 <div className="flex items-start justify-between gap-4">
-                  <h3 className="break-words font-semibold text-white">
+                  <h3 className="wrap-break-word font-semibold text-white">
                     {section.title}
                   </h3>
 
@@ -351,7 +351,7 @@ export default function SummarizePage() {
                   </span>
                 </div>
 
-                <p className="mt-2 break-words leading-7 text-gray-400">
+                <p className="mt-2 wrap-break-word leading-7 text-gray-400">
                   {section.summary}
                 </p>
               </div>
@@ -365,8 +365,8 @@ export default function SummarizePage() {
             Conclusion
           </h2>
 
-          <p className="mt-4 min-h-[100px] whitespace-pre-wrap
-                        break-words leading-8 text-gray-400">
+          <p className="mt-4 min-h-25 whitespace-pre-wrap
+                        wrap-break-word leading-8 text-gray-400">
             {typedConclusion}
 
             {typedConclusion.length <

@@ -40,7 +40,13 @@ export default function UploadPage() {
   return (
     <main className="min-h-screen flex items-center justify-center px-6">
       <div className="w-full max-w-2xl">
-
+         <button
+          onClick={() => router.push("/")}
+          className="mb-8 text-sm font-medium text-gray-400
+                     transition-colors hover:text-white"
+        >
+          ← Back to Home
+        </button>
         {/* Heading */}
         <div className="text-center mb-10">
           <p className="text-sm font-medium uppercase tracking-[0.3em] text-yellow-500 animate-glow">
@@ -96,7 +102,7 @@ export default function UploadPage() {
           </label>
 
           {file && (
-            <p className="mt-5 text-sm font-medium text-gray-700">
+            <p className="mt-5 text-sm font-medium text-gray-500">
               Selected: {file.name}
             </p>
           )}

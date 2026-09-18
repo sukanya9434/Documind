@@ -45,7 +45,7 @@ export default function Home() {
 
         </h1>
 
-        <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-gray-600">
+        <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-gray-500">
           Upload a PDF and let DocuMind extract the key ideas,
           important terms, sections, and conclusions for you.
         </p>

@@ -240,11 +240,11 @@ DocuMind/
 │
 ├── lib/
 │   │
-│   ├── ai/
-│   │   └── summary-prompt.ts
+│   ├── promptsum/
+│   │   └── prompt.ts
 │   │
 │   └── schemas/
-│       └── document-summary.ts
+│       └── summaryprocess.ts
 │
 ├── public/
 │
@@ -343,13 +343,13 @@ DocuMind separates **AI instructions** from application logic.
 The summarization prompt is maintained in:
 
 ```text
-lib/ai/summary-prompt.ts
+lib/promptsum/prompt.ts
 ```
 
 while the expected response structure is defined in:
 
 ```text
-lib/schemas/document-summary.ts
+lib/schemas/summaryprocess.ts
 ```
 
 This separation makes the AI layer easier to modify without mixing prompt logic with API implementation.

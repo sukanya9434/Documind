@@ -95,10 +95,11 @@ export default function SummarizePage() {
       }
 
       const currentText = currentPoint.slice(0, charIndex + 1);
+      const activeIndex = pointIndex;
 
       setTypedKeyPoints((previous) => {
         const updated = [...previous];
-        updated[pointIndex] = currentText;
+        updated[activeIndex] = currentText;
         return updated;
       });
 
@@ -136,10 +137,11 @@ export default function SummarizePage() {
       }
 
       const currentText = currentTerm.slice(0, charIndex + 1);
+      const activeIndex = termIndex;
 
       setTypedTerms((previous) => {
         const updated = [...previous];
-        updated[termIndex] = currentText;
+        updated[activeIndex] = currentText;
         return updated;
       });
 
@@ -178,11 +180,12 @@ export default function SummarizePage() {
 
       const fullText = currentSection.summary;
       const currentText = fullText.slice(0, charIndex + 1);
+      const activeIndex = sectionIndex;
 
       setTypedSections((previous) => {
         const updated = [...previous];
 
-        updated[sectionIndex] = {
+        updated[activeIndex] = {
           title: currentSection.title,
           summary: currentText,
           page: currentSection.page,
